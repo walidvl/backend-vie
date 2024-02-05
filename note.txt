@@ -1,0 +1,10 @@
+    fetchBookByTitle();
+  }, [title]);
+
+  if (error) {
+    return <p>{error}</p>;
+  }
+
+  if (!book) {
+    return <p>Loading...</p>;
+  }
